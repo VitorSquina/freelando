@@ -1,15 +1,19 @@
-import React from "react";
-import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
-import { Card } from "./componentes/Card/Card";
+import { Estilos } from './componentes/EstilosGlobais/Estilos'
+import { Card } from './componentes/Card/Card'
+import { ProvedorTema } from './componentes/ProvedorTema/ProvedorTema'
+import { useState } from 'react'
 
-const App = () => {
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
     <ProvedorTema>
+    <Estilos />
       <Card>
-        Conteúdo do Card
-      </Card>
+        <h1>Freelando</h1>
+      </Card> 
     </ProvedorTema>
-  );
-};
+  )
+}
 
-export default App;
+export default App
