@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Estilos } from './componentes/EstilosGlobais/Estilos'
+import React from "react";
+import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
+import { Card } from "./componentes/Card/Card";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-    <Estilos />
-      <h1>Freelando</h1>
-    </>
-  )
-}
+    <ProvedorTema>
+      <Card>
+        Conteúdo do Card
+      </Card>
+    </ProvedorTema>
+  );
+};
 
-export default App
+export default App;
